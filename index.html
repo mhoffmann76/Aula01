@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+  </script>
+  <script src="js/script.js"></script>
+
+  <title>Média do Aluno</title>
+
+  </style>
+</head>
+
+<body>
+
+
+  <div class="container">
+    <div class="row">
+
+      <form action="" method="get" id="form">
+        <h4 class="mt-5 text-center">Calculo de notas </h4>
+
+
+        <div class="form-floating col-lg-4 mx-auto  ">
+
+          <input type="text" class="form-control  mb-2" id="aluno" placeholder="">
+          <label class="form-label text-muted " for="aluno">Informe o nome do Aluno</label>
+
+        </div>
+
+
+        <div class="form-floating col-lg-4 mx-auto  ">
+
+          <input type="text" class="form-control mb-2 " id="n1" placeholder="">
+          <label for="n1" class="form-label text-muted">Informe a primeira nota</label>
+
+        </div>
+
+        <div class="form-floating col-lg-4 mx-auto ">
+
+          <input type="text" class="form-control mb-2 " id="n2" placeholder="">
+          <label for="n2" class="form-label text-muted">Digite a segunda nota</label>
+
+        </div>
+        <div class="form-floating col-lg-4 mx-auto ">
+
+          <input type="text" class="form-control mb-2" id="n3" placeholder="">
+          <label for="n3" class="form-label text-muted">Digite a terceira nota</label>
+
+        </div>
+        <div class="form-floating mb-2 col-lg-4 mx-auto">
+
+          <input type="text" class="form-control" id="n4" placeholder="">
+          <label for="n4" class="form-label text-muted">Digite a quarta nota</label>
+
+          <div class="d-flex justify-content-center mt-5">
+
+            <button class="btn btn-primary mx-5 " type="button" value="Verificar" onclick="calcular()">
+              Calcular
+            </button>
+            <button class="btn btn-primary me-5" type="button" value="Verificar" onclick="limpar()">
+              Limpar
+            </button>
+          </div>
+
+        </div>
+        <div class="col-lg-6 mx-auto mt-5" id="color">
+          <h4></h4>
+          <p class="lead  display-6  text-center  p-5" id="res"></p>
+        </div>
+
+
+      </form>
+
+    </div>
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+</body>
+
+</html>
