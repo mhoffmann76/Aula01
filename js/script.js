@@ -13,25 +13,21 @@ function calcular() {
     document.getElementById("color").style.color = "black";
     let color = document.getElementById("color");
     color.style.backgroundColor = "green";
- 
   } else if (media >= 4) {
     res.innerHTML = al + "<br>Nota: " + media + "<br> Recuperação<br>";
     document.getElementById("color").style.color = "black";
     let color = document.getElementById("color");
     color.style.backgroundColor = "#ffff00";
-  
   } else if (media < 4) {
     res.innerHTML = al + "<br>Nota: " + media + "<br> Reprovado<br>";
     document.getElementById("color").style.color = "black";
     let color = document.getElementById("color");
     color.style.backgroundColor = "red";
-
   } else {
     res.innerHTML = ` Nota: ${media}<br>Dados informados inválidos. Favor preencher os campos Corretamente<br>`;
     document.getElementById("color").style.color = "black";
     let color = document.getElementById("color");
     color.style.backgroundColor = "red";
-
   }
 
   if (al == "") {
@@ -39,7 +35,6 @@ function calcular() {
 
     var al = document.getElementById("aluno").focus();
   }
-
 }
 
 function limpar() {
